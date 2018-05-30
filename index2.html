@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>PopSmart Kids</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-signin-client_id" content="24838225583-0v1ubr6koflcb7t8lbk6rg5soi71qion.apps.googleusercontent.com">
+
+    <!-- I'm honestly not sure if bootstrap even uses jquery but the tutorial said to put this here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <!-- load bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- load font awesome for social media icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <!-- our local style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/print.css">
+
+    <!-- I moved all of the media tags to a separate css file so that we
+        can accommodate for all of the available screen sizes without 
+        cluttering our main style.css file -->
+    <link rel="stylesheet" href="css/print.css" media="print">
+
+    <!-- A google api font, really easy to change -->
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Begin Header (navbar) section -->
+    <!-- This section should stay with each static page, as is, with the exception of changing out
+        which links are available in the nav bar depending on where you are -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <!-- This creates the navbar button that changes with smaller screen sizes -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <!-- these spans are meant to be empty, they just create the lines inside the button -->
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <!-- navbar-brand is bootstrap, this is where our logo image in the top left goes -->
+                <a class="navbar-brand" href="index.html"><img class="logo" src="images/test.png" id="logo-img"></a>
+            </div>
+            <!-- this continues to create the navbar/button which changes with screen size -->
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="active">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="local">
+                        <a href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="local">
+                        <a href="/products/">Products</a>
+                    </li>
+                    <li class="local">
+                        <a href="/blog/">Blog</a>
+                    </li>
+                    <li class="local">
+                        <a href="contactUs.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- end collapsing navigation section -->
+        </div>
+    </nav>
+    <!-- end header (navbar) section -->
+
+    <!-- Begin banner (jumbotron) section, This one is easy to understand, all of the classes are bootstrap -->
+
+    <!-- change the id to whichever html file is being used -->
+    <div class="jumbotron jumbotron-fluid" id="home">
+        <div class="container text-center">
+            <h3 class="display-3">Applications embodying children to become the next:</h3>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3"></div>
+                <div class="col-xs-6" id="banner-scroll">
+                    <p class="people">Ernest Hemingway</p>
+                    <p class="people">Mark Twain</p>
+                    <p class="people">Stephen King</p>
+                    <p class="people">Charles Dickens</p>
+                    <p class="people">F. Scott Fitzgerald</p>
+                    <p class="people">Virginia Woolf</p>
+                    <p class="people">J. K. Rowling</p>
+                    <p class="people">William Shakespear</p>
+                    <p class="people">William Faulkner</p>
+                    <p class="people">Kurt Vonnegut</p>
+                    <p class="people">Jane Austen</p>
+                    <p class="people">Jack Kerouac</p>
+                    <p class="people">Sylvia Plath</p>
+                    <p class="people">Vladimir Nabokov</p>
+                    <p class="people">Ray Bradbury</p>
+                    <p class="people">James Joyce</p>
+                    <p class="people">Agatha Christie</p>
+                    <p class="people">Maya Angelou</p>
+                    <p class="people">Steven Gundry</p>
+                    <p class="people">Truman Capote</p>
+                    <p class="people">George Orwell</p>
+                    <p class="people">J. R. R. Tolkien</p>
+                    <p class="people">John Steinbeck</p>
+                    <p class="people">Leo Tolstoy</p>
+                </div>
+                <div class="col-xs-3"></div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-4"></div>
+                    <div class="col-xs-4 text-center">
+                        <button class="btn-change">Enroll Now</button>
+                    </div>
+                    <div class="col-xs-4"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- End banner (jumbotron) section -->
+
+    <!-- Begin text left image right section -->
+    <div class="container">
+        <div class="row">
+            <!-- bootstrap column-sm-4 each column takes up 1/3 of the screen 
+                there are other sizes available which will change at which screen
+                size the columns collapse over each other, this one changes at 768 pixels -->
+            <div class="col-sm-6">
+                <h1>Reading and Language Arts</h1>
+                <div class="a">PopSmartkids's reading curriculum spans the entire range of early reading, from learning the names of each letter and the sounds they represent to being able to read books, starting with a few words on a page and gradually advancing to paragraphs.</div>
+                <div class="a">The curriculum for first grade also includes writing and language skills, such as sentence structure and punctuation, parts of speech, and practice with writing genres.</div>
+            </div>
+            <!-- left side text -->
+            <div class="col-sm-6">
+                <!-- img here could be Phu's cycling phone if that's possible -->
+                <img src="images/blur-child-close-up-256468.jpg" class="img-responsive">
+            </div>
+        </div>
+    </div>
+    <!-- end text left image right section -->
+
+    <!-- Begin text right image left section -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <img src="images/arched-window-asian-boy-250701.jpg" class="img-responsive">
+            </div>
+            <div class="col-sm-6">
+                <h1>Why PopSmartKids?</h1>
+                <ul>
+                    <li class="a">Curriculum includes hundreds of entertaining animated activities</li>
+                    <li class="a">Reading curriculum spans the entire range of early learning in kids</li>
+                    <li class="a">Teaches a broad range of subjects, including math and science</li>
+                    <li class="a">Keeps kids engaged with interactive activities in the form of fun games</li>
+                    <li class="a">Unique drawing and painting program for all ages</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script>
+        setTimeout(function() {
+            $('#myModal').modal('show');
+        }, 5000);
+
+        $('#submit').click(function() {
+            $('#myModal').modal('toggle');
+        });
+     </script>
+    <!-- end text right image left section -->
+
+    <!-- Start Testimonials Section -->
+    <div class="container text-center">
+        <h2>Testimonials</h2>
+        <div class="row">
+            <!-- here we do the same thing with columns, but since there are three div sections
+                the columns will space out into thirds on wide screens, then collapse with small screens -->
+            <div class="col-sm-4">
+                <img src="images/bulbasaur.png" id="icon">
+                <h4>Bulbasaur</h4>
+                <p>Known as Fushigidane in Japan, is the first Pokémon species in Nintendo and Game Freak's Pokémon franchise. Designed by Ken Sugimori, their name is a combination of the words "bulb" and "dinosaur." First appearing in Pokémon Red and Green as a Starter Pokémon, they later appeared in subsequent sequels, spin-off games, related merchandise, and animated and printed adaptations of the franchise.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/squirtle.png" id="icon">
+                <h4>Squirtle</h4>
+                <p>Known as Zenigame in Japan, is a Pokémon species in Nintendo and Game Freak's Pokémon franchise. It was originally conceived by Game Freak's character development team and finalised by Ken Sugimori. Its name was changed from Zenigame to Squirtle during the English localization of the series in order to give it a "clever and descriptive name." In animated appearances, Squirtle is voiced in Japanese by Rikako Aikawa and in English localizations by Eric Stuart, and later Michele Knotz. Squirtle, in the anime, never evolved for reasons never truly explained by the creators.</p>
+            </div>
+            <div class="col-sm-4">
+                <img src="images/charmander.png" id="icon">
+                <h4>Charmander</h4>
+                <p>Known as Hitokage in Japan, is a Pokémon species in Nintendo and Game Freak's Pokémon franchise. Created by Ken Sugimori, Charmander first appeared in the video games Pokémon Red and Blue and subsequent sequels, later appearing in various merchandise, spinoff titles and animated and printed adaptations of the franchise. The end of a Charmander's tail is alight with a flame, and the flame's size reflects both the physical health and the emotions of the individual.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <footer class="page-footer font-small indigo pt-0">
+
+        <!-- light grey line that seperates footer items -->
+        <!-- adjust margin percentages in css file to mess with container sizes -->
+        <hr class="footer-hr">
+
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+
+            <!--Grid row-->
+            <!--        <div class="row pt-5 mb-3 text-center d-flex justify-content-center">-->
+            <div class="row justify-content-md-center text-center">
+
+                <div class="col-md-3 mb-3">
+                </div>
+                <!--Grid column-->
+                <!--            <div class="col-md-3 mb-3">-->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="privacyPolicy.html">Privacy Policy</a>
+                    </h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="legal.html">legal</a>
+                    </h6>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-md-2 mb-3">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a class="footer-info" href="safeZone.html">safe zone</a>
+                    </h6>
+                </div>
+                <!--Grid column-->
+
+            </div>
+            <!--Grid row-->
+
+            <!-- light grey line that seperates footer items -->
+            <!-- adjust margin percentages to mess with container sizes -->
+            <hr class="footer-hr">
+
+            <!--Grid row-->
+            <div class="row pb-3">
+
+                <!-- Social Media -->
+                <div class="col-md-12">
+                    <div class="mb-5 text-center">
+                        <a href="https://facebook.com/popsmartkids/" class="fab fa-facebook-square"></a>
+                        <a href="https://twitter.com/popsmartkids/" class="fab fa-twitter-square"></a>
+                        <a href="https://linkedin.com/in/priyankaraha/" class="fab fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright py-3 text-center">
+            © 2018 Copyright: PopSmartKids
+        </div>
+        <!--/Copyright-->
+
+
+        <!--Newsletter Modal Holla-->
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img align="center"src="images/popkidsnews.png" alt="popsmartkids_logo">
+                <p align="center">Sign-Up For Our Newsletter</p>
+                <div align="center"><input type="email" id="email" class="email" name="email" placeholder="Enter your email address"></div>
+                <div align="center"><button type="submit" class="submit" id="submit" onclick="closeModal()">Submit</button></div>
+                <br>
+                <p align="center">Or sign-up using your Gmail Account</p>
+
+                
+                <div align="center" class="g-signin2" data-onsuccess="onSignIn">
+                </div>    
+            </div>
+        </div>
+                <!--/Newsletter Modal Holla-->
+
+
+
+
+    </footer>
+    <!--/Footer-->
+
+    <!-- I'm honestly not sure if bootstrap even uses jquery but the tutorial said to put this here -->
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="https://apis.google.com/js/client:platform.js" async defer></script>
+</body>
+
+</html>

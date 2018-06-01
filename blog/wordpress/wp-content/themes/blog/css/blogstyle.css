@@ -1,167 +1,196 @@
-#blogBack, #blockBack a{
-	font-size:20px;
-	color:#77B5FE;
-}
-#blogContainer{
-	margin:0 auto;
-	max-width:1040px;
-	background-color:#fcfdff;
-}
-#blogRow{
-	width:100%;
-	margin:0 auto;
-	margin-bottom:30px;
-	text-align:center;
-	font-size:20px;
-}
-#blogRow h2{
-	margin-top:0;
-	color:#77B5FE;
-}
-.blogAuthor, .blogDate{
-	font-size:10px;
-	color:gray;
+#blogBack,
+#blockBack a {
+    font-size: 20px;
+    color: #77B5FE;
 }
 
-.blogPost{
-	font-size: 12px;
-	color:black;
-	padding:2px;
+.blogBackLink:hover {
+    color: #79CDCD;
+    text-decoration: none;
 }
-.clearFix{
-	padding-top:20px;
-	clear:both;
-	width:100%;
-	border-bottom:solid 1px #e3e7ed;
-}
-#authorBox{
-	padding-top:10px;
-	padding-bottom:10px;
-	border-top:#e3e7ed 1px solid;
-	border-bottom:#e3e7ed 1px solid;
-}
-.col-md-8{
-	height:100%;
-	
-}
-.col-md-2{
-	max-width:50px;
-	padding:0;
-}
-.col-md-10{
-	max-width:100%;
-	padding-left:10px;
-}
-#constant h3{
-	color:#77B5FE;
-}
-.container-fluid img{
-	object-fit:cover;
-}
-.featured{
-		max-width:300px;
-	}
 
-.search-form-container{
-	border-bottom: solid 1px #e3e7ed;
-	padding-bottom:20px;
+#blogContainer {
+    margin: 0 auto;
+    max-width: 1040px;
+    background-color: #fcfdff;
 }
-#searchform{
-	margin:0 auto;
-	width:100%;
-	color:#77B5FE;
+
+#blogRow {
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px;
 }
-#searchResults{
-	padding-top:20px;
-	text-align:center;
-	width:100%;
-	color:black;
+
+#blogRow h2 {
+    margin-top: 0;
+    color: #77B5FE;
 }
-#searchsubmit{
-	border:none;
-	background:white;
+
+.blogAuthor,
+.blogDate {
+    font-size: 10px;
+    color: gray;
 }
-#s{
-	width:40%;
-	color:black;
-	font-size:1vw;
+
+.blogPost {
+    font-size: 12px;
+    color: black;
+    padding: 2px;
 }
-.randomBlog img{
-		width:100%;
-		max-width: 300px;
-		max-height:200px;
+
+.clearFix {
+    padding-top: 20px;
+    clear: both;
+    width: 100%;
+    border-bottom: solid 1px #e3e7ed;
 }
-.fa-search{
-	color:light-blue;
+
+#authorBox {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /*    border-top: #e3e7ed 1px solid;*/
+    border-bottom: #e3e7ed 1px solid;
 }
-.summary{
-	color:black;
+
+.col-md-8 {
+    height: 100%;
 }
-@media (min-width:768px ){
-	#leftImg{
-		width:40%;
-	}
-	#textLeft{
-		width:60%;
-	}
-	#rightImg{
-		width:40%;
-	}
-	#textRight{
-		width:60%;
-	}
-	.col-md-8{
-		width:60%;
-	}
-	.col-md-pull-8{
-		right:40%;
-	}
-	.col-md-push-4{
-		left:60%;
-	}
-	.featured{
-		height:100%;
-		width:100%;
-		max-width: 400px;
-		max-height:300px;
-	}
-	#blogRow{
-		max-height:400px;
-		width:100%;
-		margin:0 auto;
-		text-align:left;
-		margin-bottom:30px;
-		padding-bottom:20px;
-		margin-top:30px;
-		border-bottom: 1px #e3e7ed solid;
-	}
-	#s{
-	width:80%;
-	
-	}
-	
-	.randomBlog{
-		margin-top:50px;
-	}
-	
-	
-	.pagination	{
-		color:black;
-		margin:0 auto;
-		font-size:20px;
-		text-align:center;
-	}
+
+#authorColumn {
+    max-width: 50px;
+    padding: 0;
 }
-#searchBack{
-	font-size:20px;
+
+.col-md-10 {
+    max-width: 100%;
+    padding-left: 10px;
 }
-body{
-	min-height:100%;
-	margin:0 auto;
+
+#constant h3 {
+    color: #77B5FE;
 }
-	
+
+.container-fluid img {
+    object-fit: cover;
+}
+
+.featured {
+    max-width: 300px;
+}
+
+.search-form-container {
+    padding-bottom: 20px;
+}
+
+.search-hr {
+    margin: 1% 2% 1%;
+}
+
+#searchform {
+    margin: 0 auto;
+    width: 100%;
+    color: #77B5FE;
+}
+
+#searchResults {
+    padding-top: 20px;
+    text-align: center;
+    width: 100%;
+    color: black;
+}
+
+#searchsubmit {
+    border: none;
+    background: white;
+}
+
+#s {
+    width: 40%;
+    color: black;
+    font-size: 1vw;
+}
+
+.randomBlog img {
+    width: 100%;
+    max-width: 300px;
+    max-height: 200px;
+}
+
+.fa-search {
+    color: light-blue;
+}
+
+.summary {
+    color: black;
+}
+
+@media (min-width:768px) {
+    #leftImg {
+        width: 40%;
+    }
+    #textLeft {
+        width: 60%;
+    }
+    #rightImg {
+        width: 40%;
+    }
+    #textRight {
+        width: 60%;
+    }
+    .col-md-8 {
+        width: 60%;
+    }
+    .col-md-pull-8 {
+        right: 40%;
+    }
+    .col-md-push-4 {
+        left: 60%;
+    }
+    .featured {
+        height: 100%;
+        width: 100%;
+        max-width: 400px;
+        max-height: 300px;
+    }
+    #blogRow {
+        max-height: 400px;
+        width: 100%;
+        margin: 0 auto;
+        text-align: left;
+        margin-bottom: 30px;
+        padding-bottom: 20px;
+        margin-top: 30px;
+        /*        border-bottom: 1px #e3e7ed solid;*/
+    }
+    #s {
+        width: 80%;
+    }
+    .randomBlog {
+        margin-top: 50px;
+    }
+    .pagination {
+        color: black;
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+
+#searchBack {
+    font-size: 20px;
+}
+
+body {
+    min-height: 100%;
+    margin: 0 auto;
+}
+
+
 /* =WordPress Core
 -------------------------------------------------------------- */
+
 .alignnone {
     margin: 5px 5px 5px 0;
 }
@@ -173,7 +202,7 @@ div.aligncenter {
 }
 
 .alignright {
-    float:right;
+    float: right;
     margin: 5px 0 5px 5px;
 }
 
@@ -205,7 +234,8 @@ a img.aligncenter {
 .wp-caption {
     background: #fff;
     border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
+    max-width: 96%;
+    /* Image does not overflow the content area */
     padding: 5px 3px 10px;
     text-align: center;
 }
@@ -238,34 +268,37 @@ a img.aligncenter {
     padding: 0 4px 5px;
 }
 
+
 /* Text meant only for screen readers. */
+
 .screen-reader-text {
-	border: 0;
-	clip: rect(1px, 1px, 1px, 1px);
-	clip-path: inset(50%);
-	height: 1px;
-	margin: -1px;
-	overflow: hidden;
-	padding: 0;
-	position: absolute !important;
-	width: 1px;
-	word-wrap: normal !important; /* Many screen reader and browser combinations announce broken words as they would appear visually. */
+    border: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+    /* Many screen reader and browser combinations announce broken words as they would appear visually. */
 }
 
 .screen-reader-text:focus {
-	background-color: #eee;
-	clip: auto !important;
-	clip-path: none;
-	color: #444;
-	display: block;
-	font-size: 1em;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000;
-	/* Above WP toolbar. */
+    background-color: #eee;
+    clip: auto !important;
+    clip-path: none;
+    color: #444;
+    display: block;
+    font-size: 1em;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000;
+    /* Above WP toolbar. */
 }
